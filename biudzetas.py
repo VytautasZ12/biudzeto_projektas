@@ -4,8 +4,6 @@ import pickle
 class Irasas:
     def __init__(self, suma):
         self.suma = suma
-
-
 class PajamuIrasas(Irasas):
     def __init__(self, suma, siuntejas, info):
         super().__init__(suma)
@@ -14,8 +12,6 @@ class PajamuIrasas(Irasas):
 
     def __str__(self):
         return f"Pajamos: {self.suma} (siuntejas - {self.siuntejas}, info - {self.info}"
-
-
 class IslaiduIrasas(Irasas):
     def __init__(self, suma, atsiskaitymo_budas, isigyta, info):
         super().__init__(suma)
